@@ -10,7 +10,7 @@ import Footer from '../Components/Footer'
 import MengundangSection from '../Components/Mengundang/MengundangSection'
 import { useEffect, useRef, useState } from "react"
 import { Volume2, VolumeX } from "lucide-react"
-import Lagu from "../assets/Vd/BatasSenja.mp3"
+import Lagu from "../assets/VD/BatasSenja.mp3"
 
 function HomePage() {
    const audioRef = useRef(null);
