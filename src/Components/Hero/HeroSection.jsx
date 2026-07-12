@@ -1,6 +1,6 @@
 // import { FaRegCalendarAlt } from "react-icons/fa";
 
-import HeroPoto from "../../assets/IMG/poto1.png";
+import HeroPoto from "../../assets/IMG/Poto1.png";
 // import BungaSection from "../Bunga/BungaSection";
 
 import Countdown from "./Countdown";
