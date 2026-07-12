@@ -1,6 +1,6 @@
 // import { FaRegCalendarAlt } from "react-icons/fa";
 
-import heroImage from "../../assets/IMG/poto1.png";
+import HeroPoto from "../../assets/IMG/poto1.png";
 // import BungaSection from "../Bunga/BungaSection";
 
 import Countdown from "./Countdown";
@@ -16,8 +16,8 @@ export default function HeroSection() {
   {/* Background */}
   <div className=" relative">
     <img
-      src={heroImage}
-      alt="Hero"
+      src={HeroPoto}
+      alt="HeroPoto"
       className="
         w-full
         h-auto
