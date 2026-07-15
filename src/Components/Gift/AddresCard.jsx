@@ -1,12 +1,21 @@
 import { FaGift } from "react-icons/fa";
 import { FaCopy } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 export default function AddresCard({
   receiver,
   address,
 }) {
-  const copyAddress = () => {
-    navigator.clipboard.writeText(address);
+   const copyAddress = async () => {
+    try {
+      await  navigator.clipboard.writeText(address);
+  
+      toast.success("Alamat Untuk Hadiah berhasil di salin", {
+        icon: "📋",
+      });
+    } catch (error) {
+      toast.error("Gagal menyalin Alamat.");
+    }
   };
 
   return (

@@ -1,14 +1,25 @@
 import { FaCopy } from "react-icons/fa6";
 import { FaBuildingColumns } from "react-icons/fa6";
-
+import { toast } from "react-toastify";
 export default function CardGift({
   logo,
   number,
   owner,
 }) {
-  const copyNumber = () => {
-    navigator.clipboard.writeText(number);
-  };
+  // const copyNumber = () => {
+  //   navigator.clipboard.writeText(number);
+  // };
+  const copyNumber = async () => {
+  try {
+    await navigator.clipboard.writeText(number);
+
+    toast.success("Nomor rekening berhasil disalin!", {
+      icon: "📋",
+    });
+  } catch (error) {
+    toast.error("Gagal menyalin nomor rekening.");
+  }
+};
 
   return (
     <div

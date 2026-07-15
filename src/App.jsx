@@ -23,9 +23,13 @@ function App() {
             
           </Routes>
       <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        theme="dark"
+         position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        theme="light"
       />
     </BrowserRouter>
     </>

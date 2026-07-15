@@ -86,8 +86,8 @@ export default function PasanganCard({
         <p className="mt-3 italic text-gray-600">{parent}</p>
         <p className="italic text-gray-600">{family}</p>
 
-        <button className="mt-8 rounded-full bg-[#7FA39B] px-6 py-2 text-white">
-          Pasangan Story
+        <button className="mt-8 rounded-full bg-[#7FA39B] px-6 py-2 text-white font-serif italic">
+          Instagram
         </button>
       </div>
     </div>
