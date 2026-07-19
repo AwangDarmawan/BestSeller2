@@ -7,6 +7,7 @@ export default function Cover() {
 
   const handleOpen = () => {
     navigate("/home");
+       localStorage.setItem("playMusic", "true");
 
   };
 
